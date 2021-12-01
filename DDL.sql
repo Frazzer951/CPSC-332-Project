@@ -126,6 +126,7 @@ INSERT INTO STUDENT VALUES('435233987', 'Trinity', 'Kouma', '2312 Rainey Street'
 INSERT INTO STUDENT VALUES('845834321', 'Zohaib', 'Leal', '74 61st Street', '5629348128', 'CPSC')
 INSERT INTO STUDENT VALUES('562134132', 'Abby', 'Cornish', '234 Main Street', '5624533463', 'COMM')
 INSERT INTO STUDENT VALUES('823451221', 'Ayomide', 'Lees', '172 Hollywood Boulevard', '7141273127', 'MATH')
+
 -- Minor --
 
 -- Enroll --
