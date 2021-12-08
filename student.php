@@ -27,13 +27,13 @@
 
     echo '<link rel="stylesheet" type="text/css" href="style.css">';
     echo "<title>cs32t13 | $cnum</title>";
-    echo '<a href="index.html"> Home </a>';
-    echo '<a href="student.html"> Student </a>';
+    echo '<button><a href="index.html"> Home </a></button>';
+    echo '<button><a href="student.html"> Student </a></button>';
     echo "<h1>Sections for $cnum:</h1><br>";
     echo '<div style="display: flex;">';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
-      echo '<div style="background-color:grey; margin:10px; padding:15px;">';
+      echo '<div class="box">';
       echo "<h4>Section " . $row['SNUM'] . ":</h4>";
       echo "<p>";
       echo "Classroom: " . $row['CLASSROOM'] . "<br>";
@@ -64,17 +64,16 @@
 
     echo '<link rel="stylesheet" type="text/css" href="style.css">';
     echo "<title>cs32t13 | $cwid</title>";
-    echo '<a href="index.html"> Home </a>';
-    echo '<a href="student.html"> Student </a>';
+    echo '<button><a href="index.html"> Home </a></button>';
+    echo '<button><a href="student.html"> Student </a></button>';
     echo "<h1>Transcript for $cwid:</h1><br>";
     echo '<div style="display: flex;">';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
-      echo '<div style="background-color:grey; margin:10px; padding:15px;">';
+      echo '<div class="box">';
       echo "<p>";
-      echo "Course: " . $row['TITLE'] . "<br>";
+      echo "<h3>" . $row['TITLE'] . "</h3>";
       echo "Grade: " . $row['GRADE'] . "<br>";
-      echo "</p>";
       echo "</div>";
       echo "<br>";
     }

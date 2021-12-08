@@ -24,13 +24,13 @@
 
     echo '<link rel="stylesheet" type="text/css" href="style.css">';
     echo "<title>cs32t13 | $ssn</title>";
-    echo '<a href="index.html"> Home </a>';
-    echo '<a href="professor.html"> Professor </a>';
+    echo '<button><a href="index.html"> Home </a></button>';
+    echo '<button><a href="professor.html"> Professor </a></button>';
     echo "<h1>Classes for $ssn:</h1><br>";
     echo '<div style="display: flex;">';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
-      echo '<div style="background-color:grey; margin:10px; padding:15px;">';
+      echo '<div class="box">';
       echo "<h4>" . $row['TITLE'] . ":</h4>";
       echo "<p>";
       echo "Room: " . $row['CLASSROOM'] . "<br>";
@@ -66,10 +66,10 @@
 
     echo '<link rel="stylesheet" type="text/css" href="style.css">';
     echo "<title>cs32t13 | $cnum-$snum</title>";
-    echo '<a href="index.html"> Home </a>';
-    echo '<a href="professor.html"> Professor </a>';
+    echo '<button><a href="index.html"> Home </a></button>';
+    echo '<button><a href="professor.html"> Professor </a></button>';
     echo "<h1>Grades for $cnum-$snum:</h1><br>";
-    echo '<table>';
+    echo '<table class="center">';
     echo '<tr><th>Grade</th><th>Count</th></tr>';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
