@@ -1,0 +1,34 @@
+<html>
+  <main>
+    <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>cs32t13 | PROFESSOR</title>
+    </head>
+
+    <body>
+      <header>
+        <div>
+          <a href="index.html">Home</a>
+        </div>
+      </header>
+
+      <section>
+        <h3>Get Classes</h3>
+        <form action="professor.php" method="POST">
+          Enter SSN:
+          <input type="text" name="ssn" />
+          <input type="submit" name="classes" value="Submit" />
+        </form>
+
+        <h3>Get Section Grades</h3>
+        <form action="professor.php" method="POST">
+          Enter the Course Number (Please Surround with Quotes eg. "CPSC 120"):
+          <input type="text" name="cnum" /> <br />
+          Enter Section Number:
+          <input type="text" name="snum" /> <br />
+          <input type="submit" name="grades" value="Submit" />
+        </form>
+      </section>
+    </body>
+  </main>
+</html>

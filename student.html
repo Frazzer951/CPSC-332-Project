@@ -1,0 +1,32 @@
+<html>
+  <main>
+    <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>cs32t13 | STUDENT</title>
+    </head>
+
+    <body>
+      <header>
+        <div>
+          <a href="index.html">Home</a>
+        </div>
+      </header>
+
+      <section>
+        <h3>Get Sections of Class</h3>
+        <form action="student.php" method="POST">
+          Enter the Course Number (Please Surround with Quotes eg. "CPSC 120"):
+          <input type="text" name="cnum" />
+          <input type="submit" name="section" value="Submit" />
+        </form>
+
+        <h3>Get Transcript</h3>
+        <form action="student.php" method="POST">
+          Enter CWID:
+          <input type="text" name="cwid" />
+          <input type="submit" name="transcript" value="Submit" />
+        </form>
+      </section>
+    </body>
+  </main>
+</html>
