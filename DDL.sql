@@ -94,9 +94,9 @@ CREATE TABLE ENROLL (
 
 -- inserting data into tables --
 -- Professor --
-INSERT INTO PROFESSOR VALUES ( '123456789', 'John Smith', '435 Green Apple Ln.', 'Oxford', 'Washington', '11254', '777', '5555555', 'Male', 'Doctor', '125000', '10' );;
-INSERT INTO PROFESSOR VALUES ( '754327899', 'Jack Turner', '368 Chamber Lane Dr.', 'Miami', 'Florida', '31708', '111', '4578979', 'Male', 'Doctor', '200000', '3' );;
-INSERT INTO PROFESSOR VALUES ( '987654321', 'Einion Rolf', '123 Candy Lane', 'Fullerton', 'California', '90621', '714', '2341234', 'Male', 'Doctor', '80000', '1');;
+INSERT INTO PROFESSOR VALUES ( '123456789', 'John Smith', '435 Green Apple Ln.', 'Oxford', 'Washington', '11254', '777', '5555555', 'Male', 'Doctor', '125000', '10' );
+INSERT INTO PROFESSOR VALUES ( '754327899', 'Jack Turner', '368 Chamber Lane Dr.', 'Miami', 'Florida', '31708', '111', '4578979', 'Male', 'Doctor', '200000', '3' );
+INSERT INTO PROFESSOR VALUES ( '987654321', 'Einion Rolf', '123 Candy Lane', 'Fullerton', 'California', '90621', '714', '2341234', 'Male', 'Doctor', '80000', '1');
 
 -- Department --
 INSERT INTO DEPARTMENT VALUES ('CPSC', 'Computer Science', '6572783700', 'Fullerton', '123456789');
@@ -127,11 +127,11 @@ INSERT INTO SECTION VALUES('05', 'MATH 302', 'CS-304', '60', 'W', '08:00', '11:0
 -- Student --
 INSERT INTO STUDENT VALUES('111111111', 'Eilish', 'Barron', '654 Grove Street', '5624533463', 'CPSC');
 INSERT INTO STUDENT VALUES('234165845', 'Harriett', 'Rayner', '21 Jump Street', '7124372942', 'MATH');
-INSERT INTO STUDENT VALUES('999545234', 'Jim', 'Mcguire', '66 Elm Street', '2392102323', 'ENGL');
-INSERT INTO STUDENT VALUES('564234123', 'Stephan', 'Gamble', '123 Paper Street', '7142349102', 'PHYS');
+INSERT INTO STUDENT VALUES('999545234', 'Jim', 'Mcguire', '66 Elm Street', '2392102323', 'EGME');
+INSERT INTO STUDENT VALUES('564234123', 'Stephan', 'Gamble', '123 Paper Street', '7142349102', 'MATH');
 INSERT INTO STUDENT VALUES('435233987', 'Trinity', 'Kouma', '2312 Rainey Street', '8182328188', 'CPSC');
 INSERT INTO STUDENT VALUES('845834321', 'Zohaib', 'Leal', '74 61st Street', '5629348128', 'CPSC');
-INSERT INTO STUDENT VALUES('562134132', 'Abby', 'Cornish', '234 Main Street', '5624533463', 'COMM');
+INSERT INTO STUDENT VALUES('562134132', 'Abby', 'Cornish', '234 Main Street', '5624533463', 'EGME');
 INSERT INTO STUDENT VALUES('823451221', 'Ayomide', 'Lees', '172 Hollywood Boulevard', '7141273127', 'MATH');
 
 -- Minor --
@@ -153,7 +153,7 @@ INSERT INTO ENROLL VALUES('234165845', '04', 'MATH 302', 'A+');
 INSERT INTO ENROLL VALUES('564234123', '05', 'MATH 302', 'A');
 INSERT INTO ENROLL VALUES('435233987', '01', 'CPSC 121', 'B');
 INSERT INTO ENROLL VALUES('435233987', '01', 'CPSC 131', 'C');
-INSERT INTO ENROLL VALUES('564234123', '01', 'EGME 335', 'B');
+INSERT INTO ENROLL VALUES('564234123', '10', 'EGME 335', 'B');
 INSERT INTO ENROLL VALUES('823451221', '01', 'CPSC 121', 'C+');
 INSERT INTO ENROLL VALUES('823451221', '01', 'CPSC 131', 'C');
 INSERT INTO ENROLL VALUES('823451221', '04', 'MATH 302', 'B-');

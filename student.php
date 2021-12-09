@@ -30,7 +30,7 @@
     echo '<button><a href="index.html"> Home </a></button>';
     echo '<button><a href="student.html"> Student </a></button>';
     echo "<h1>Sections for $cnum:</h1><br>";
-    echo '<div style="display: flex;">';
+    echo '<div class="box">';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
       echo '<div class="box">';
@@ -67,10 +67,10 @@
     echo '<button><a href="index.html"> Home </a></button>';
     echo '<button><a href="student.html"> Student </a></button>';
     echo "<h1>Transcript for $cwid:</h1><br>";
-    echo '<div style="display: flex;">';
+    echo '<div class="box">';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
-      echo '<div class="box">';
+      echo '<div>';
       echo "<p>";
       echo "<h3>" . $row['TITLE'] . "</h3>";
       echo "Grade: " . $row['GRADE'] . "<br>";

@@ -27,10 +27,10 @@
     echo '<button><a href="index.html"> Home </a></button>';
     echo '<button><a href="professor.html"> Professor </a></button>';
     echo "<h1>Classes for $ssn:</h1><br>";
-    echo '<div style="display: flex;">';
+    echo '<div class="box">';
     for ($i = 0; $i < $rows; $i++) {
       $row = $result->fetch_assoc();
-      echo '<div class="box">';
+      echo '<div>';
       echo "<h4>" . $row['TITLE'] . ":</h4>";
       echo "<p>";
       echo "Room: " . $row['CLASSROOM'] . "<br>";
